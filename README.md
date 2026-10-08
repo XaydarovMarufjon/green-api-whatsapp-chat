@@ -1,6 +1,6 @@
 # WhatsApp Chat · GREEN-API
 
-Минимальный React + TypeScript чат для **WhatsApp**. Исходное задание разрешает WhatsApp как альтернативу MAX; по запросу пользователя приложение переведено на WhatsApp. Эта версия больше не поддерживает MAX.
+Минимальный React + TypeScript чат для **WhatsApp**. Исходное задание разрешает WhatsApp как альтернативу MAX; по запросу пользователя приложение переведено на WhatsApp.
 
 ## Запуск в VS Code
 
@@ -15,7 +15,7 @@ npm run dev
 
 ## Подключение WhatsApp
 
-1. Выберите **WhatsApp-инстанс** GREEN-API, не MAX и не WABA.
+1. Выберите **WhatsApp-инстанс** GREEN-API.
 2. Авторизуйте его в кабинете GREEN-API: на телефоне WhatsApp → Связанные устройства → Привязка устройства → QR-код из кабинета. Дождитесь состояния `authorized`.
 3. Скопируйте `apiUrl`, `idInstance`, `apiTokenInstance` без изменения домена. Поддерживаются HTTPS `api.greenapi.com`, `api.green-api.com` и числовые кластеры, например `7107.api.greenapi.com`. Ссылка на страницу продукта не подходит. `/v3` для этой WhatsApp-версии не используется.
 4. Для входящих сообщений в настройках инстанса оставьте `webhookUrl` пустым и включите `incomingWebhook`. Для статусов включите `outgoingWebhook`, для исходящих событий — `outgoingAPIMessageWebhook`/`outgoingMessageWebhook`; `stateWebhook` сообщает о состоянии аккаунта.
